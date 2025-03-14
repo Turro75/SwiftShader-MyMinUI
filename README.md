@@ -95,6 +95,6 @@ $ sudo make install
 Place libSDL2-2.0.so.0, libEGL.so, libGLESv2.so, libjson-c.so.5 and the executable file in the same folder.
 ```
 # kill -STOP `pidof MainUI`
-# LD_LIBRARY_PATH=.:/config/lib:/mnt/SDCARD/miyoo/lib ./xxx
+# LD_LIBRARY_PATH=.:/config/lib:/customer/lib ./xxx
 # kill -CONT `pidof MainUI`
 ```

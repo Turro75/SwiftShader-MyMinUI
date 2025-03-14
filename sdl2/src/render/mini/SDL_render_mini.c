@@ -189,7 +189,7 @@ static int Mini_QueueCopy(SDL_Renderer *renderer, SDL_RenderCommand *cmd, SDL_Te
 
     dst.w = dstrect->w * scale;
     dst.h = dstrect->h * scale;
-    dst.x = (vid_win->w - dstrect->x) * scale;
+    dst.x = (vid_win->w - (dstrect->x + dstrect->w)) * scale;
     dst.y = dstrect->y * scale;
     dst.x += ((FB_W - (vid_win->w * scale)) / 2);
     dst.y += ((FB_H - (vid_win->h * scale)) / 2);

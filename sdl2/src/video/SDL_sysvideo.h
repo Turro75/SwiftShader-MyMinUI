@@ -437,10 +437,6 @@ extern VideoBootStrap RPI_bootstrap;
 extern VideoBootStrap KMSDRM_bootstrap;
 extern VideoBootStrap KMSDRM_LEGACY_bootstrap;
 extern VideoBootStrap DUMMY_bootstrap;
-extern VideoBootStrap A30_bootstrap;
-extern VideoBootStrap Mini_bootstrap;
-extern VideoBootStrap XT894_bootstrap;
-extern VideoBootStrap XT897_bootstrap;
 extern VideoBootStrap Wayland_bootstrap;
 extern VideoBootStrap NACL_bootstrap;
 extern VideoBootStrap VIVANTE_bootstrap;
@@ -449,6 +445,11 @@ extern VideoBootStrap QNX_bootstrap;
 extern VideoBootStrap OFFSCREEN_bootstrap;
 extern VideoBootStrap OS2DIVE_bootstrap;
 extern VideoBootStrap OS2VMAN_bootstrap;
+
+extern VideoBootStrap A30_bootstrap;
+extern VideoBootStrap Mini_VideoDriver;
+extern VideoBootStrap XT894_bootstrap;
+extern VideoBootStrap XT897_bootstrap;
 
 extern SDL_VideoDevice *SDL_GetVideoDevice(void);
 extern int SDL_AddBasicVideoDisplay(const SDL_DisplayMode *desktop_mode);

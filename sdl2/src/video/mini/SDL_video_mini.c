@@ -150,7 +150,7 @@ int GFX_Copy(const void *pixels, SDL_Rect src_rt, SDL_Rect dst_rt, int pitch, in
 
     MI_SYS_FlushInvCache(gfx.tmp.virAddr, pitch * src_rt.h);
     MI_GFX_BitBlit(&gfx.hw.src.surf, &gfx.hw.src.rt, &gfx.hw.dst.surf, &gfx.hw.dst.rt, &gfx.hw.opt, &u16Fence);
-    MI_GFX_WaitAllDone(FALSE, u16Fence);
+    MI_GFX_WaitAllDone(TRUE, u16Fence);
     return 0;
 }
 
@@ -245,7 +245,7 @@ static SDL_VideoDevice *Mini_CreateDevice(int devindex)
     return device;
 }
 
-VideoBootStrap Mini_bootstrap = { "Mini", "Miyoo Mini Video Driver", Mini_CreateDevice };
+VideoBootStrap Mini_VideoDriver = { "Mini", "Miyoo Mini Video Driver", Mini_CreateDevice };
 
 int Mini_VideoInit(_THIS)
 {
