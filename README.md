@@ -103,8 +103,24 @@ $ sudo mini /opt
 $ cd
 $ git clone https://github.com/steward-fu/sdl2
 $ cd sdl2/examples
-$ make clean
-$ make
+$ make -f Makefile.mini clean
+$ make -f Makefile.mini 
+```
+
+&nbsp;
+
+## Miyoo A30
+```
+$ cd
+$ wget https://github.com/steward-fu/website/releases/download/miyoo-a30/a30_toolchain-v1.0.tar.gz
+$ tar xvf a30_toolchain-v1.0.tar.gz
+$ sudo mv a30 /opt
+
+$ cd
+$ git clone https://github.com/steward-fu/sdl2
+$ cd sdl2/examples
+$ make -f Makefile.a30 clean
+$ make -f Makefile.a30 
 ```
 
 &nbsp;
