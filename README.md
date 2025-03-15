@@ -6,7 +6,7 @@
 This repository contains the SDL v2.0 source code, ported for the following handheld devices:  
 - Miyoo Mini (Plus)  
   Utilizes SigmaStar MI GFX for rendering and is supported on both Stock OS and Onion v4.3.1-1.
-- Miyoo A30
+- Miyoo A30  
   Utilizes Libmali for rendering and is supported on Stock OS.
 - Motorola Photon Q (XT897)  
   Utilizes Wayland Client for rendering and is supported on Sailfish OS v4.4.0.68.
