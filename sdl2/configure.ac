@@ -3809,7 +3809,6 @@ case "$host" in
         CheckMiniVideo
         CheckMiniAudio
         CheckA30Video
-        CheckA30Audio
         CheckXT894Video
         CheckXT897Video
         CheckVulkan
