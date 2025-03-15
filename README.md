@@ -1,4 +1,4 @@
-# SDL2 Library with Virtual GPU Support for Miyoo Mini (Plus)
+# SDL2 with Virtual GPU Support for Miyoo Mini (Plus)
 ![image](images/miyoo-mini.jpg) ![image](images/miyoo-mini-plus.jpg)
 
 &nbsp;
