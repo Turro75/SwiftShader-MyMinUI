@@ -18,9 +18,9 @@ int main(int argc, char **argv)
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     screen = SDL_CreateRGBSurface(0, w, h, bpp, 0, 0, 0, 0);
     texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB565, SDL_TEXTUREACCESS_STREAMING, w, h);
-    SDL_FillRect(screen, &screen->clip_rect, SDL_MapRGB(screen->format, 0x00, 0xff, 0x00));
+    SDL_FillRect(screen, &screen->clip_rect, SDL_MapRGB(screen->format, 0x80, 0x40, 0x00));
  
-    SDL_Surface *png = IMG_Load("main.png");
+    SDL_Surface *png = IMG_Load("alpha.png");
     SDL_SetSurfaceAlphaMod(png, 128);
     SDL_BlitSurface(png, NULL, screen, NULL);
     SDL_FreeSurface(png);

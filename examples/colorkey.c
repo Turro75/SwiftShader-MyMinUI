@@ -19,7 +19,7 @@ int main(int argc, char **argv)
     texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB565, SDL_TEXTUREACCESS_STREAMING, w, h);
     SDL_FillRect(screen, &screen->clip_rect, SDL_MapRGB(screen->format, 0xff, 0x00, 0x00));
  
-    SDL_Surface *bmp = SDL_LoadBMP("main.bmp");
+    SDL_Surface *bmp = SDL_LoadBMP("color.bmp");
     SDL_SetColorKey(bmp, SDL_TRUE, SDL_MapRGB(bmp->format, 0xff, 0xff, 0xff));
     SDL_BlitSurface(bmp, NULL, screen, NULL);
     SDL_FreeSurface(bmp);
