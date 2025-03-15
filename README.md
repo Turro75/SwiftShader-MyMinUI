@@ -90,8 +90,25 @@ $ sudo make install
 
 &nbsp;
 
+# How to Build the Examples
+## Miyoo Mini (Plus)
+```
+$ cd
+$ wget https://github.com/steward-fu/website/releases/download/miyoo-mini/mini_toolchain-v1.0.tar.gz
+$ tar xvf mini_toolchain-v1.0.tar.gz
+$ sudo mini /opt
+
+$ cd
+$ git clone https://github.com/steward-fu/sdl2
+$ cd sdl2/examples
+$ make clean
+$ make
+```
+
+&nbsp;
+
 # How to Run the Program with SDL Library
-## Miyoo Mini
+## Miyoo Mini (Plus)
 Place libSDL2-2.0.so.0, libEGL.so, libGLESv2.so, libjson-c.so.5 and the executable file in the same folder.
 ```
 # kill -STOP `pidof MainUI`
