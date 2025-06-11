@@ -34,6 +34,7 @@ namespace sw
     private:
         pFunc fb_cb;
         void *fb_buf;
+        int _width;
 	};
 }
 
