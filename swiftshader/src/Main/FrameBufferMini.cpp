@@ -15,6 +15,7 @@ namespace sw {
 	{
         fb_cb = NULL;
         fb_buf = NULL;
+	_width = width;
 	}
 
 	FrameBufferMini::~FrameBufferMini()
@@ -24,7 +25,7 @@ namespace sw {
 	void *FrameBufferMini::lock()
 	{
         if (fb_cb && fb_buf) {
-            stride = 640 * 4;
+            stride = _width * 4;
             return framebuffer = fb_buf;
         }
         return NULL;
