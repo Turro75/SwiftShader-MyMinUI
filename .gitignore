@@ -1,9 +1,1 @@
 swiftshader/build/
-sdl2/configure
-sdl2/config.log
-sdl2/include/SDL_config.h
-sdl2/include/SDL_revision.h
-sdl2/sdl2-config.cmake
-sdl2/sdl2.pc
-sdl2/test/configure
-packages
